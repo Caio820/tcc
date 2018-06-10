@@ -30,7 +30,45 @@ ScreenManagement:
 
 <Cadastro>:
     name: "cadastro"
-
+    Label:
+        size_hint: .1, .1
+		pos_hint: {"x":.45, "y":.8}
+        font_size: "50sp"
+        text: "Crie sua conta"
+		
+	
+	TextInput:
+        size_hint: .4, .05
+		pos_hint: {"x":.3, "y":.6}
+        font_size: "30sp"
+        multiline: False
+        text: "Usuário"
+     
+    TextInput:
+        size_hint: .4, .05
+		pos_hint: {"x":.3, "y":.5}
+        font_size: "30sp"
+        multiline: False
+        text: "Senha"
+		
+	TextInput:
+        size_hint: .4, .05
+		pos_hint: {"x":.3, "y":.4}
+        font_size: "30sp"
+        multiline: False
+        text: "Email"
+		
+	Button:
+        size_hint: .3, .05
+        pos_hint: {"x":.52, "y": .3}
+        text: "Voltar"
+        on_release: app.root.current = "home"
+    
+	Button:
+        size_hint: .3, .05
+        pos_hint: {"x":.12, "y": .3}
+        text: "Cadastrar"
+        on_release: app.root.current = "home"
 
 <Login>:
     name: "login"
@@ -64,7 +102,7 @@ ScreenManagement:
         size_hint: .1, .1
         pos_hint: {"x":.45, "y":.4}
         font_size: "20sp"
-        text: "esqueci a senha"
+        text: "Esqueci a senha"
 
 	Button:
         #largura .1 = 10% e altura .1 = 10%
